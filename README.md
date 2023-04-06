@@ -38,8 +38,8 @@ The following table below shows a sample of rows from the concatenated table.
 
 * **Deduplication**: There are two types of duplicates present in the data. The first type is a candidate who applied for more than one role within the same department, and the second one is a candidate who applied for more than 1 roles across distinct departments
 * **Deduplication**: The second type of duplication is not a problem, as one candidate can be equally qualified for two different roles across different departments as they can be quite different from one another
-* **Deplucation**: However, the first type could be problematic. Roles within the same department are quite different - the seniority appears to differ a lot. It would not make sense for one employee to qualify for two different levels of seniority
-* **Deplucation**: In that case, their salary expectations might not be the most accurate and may be muddied by the perception of the other role. So for that reason, we have decided to only retain the role for which the candidate progressed the farthest into, as the best indication of qualification for that role, and hence proper ability to estimate compensation
+* **Deduplication**: However, the first type could be problematic. Roles within the same department are quite different - the seniority appears to differ a lot. It would not make sense for one employee to qualify for two different levels of seniority
+* **Deduplication**: In that case, their salary expectations might not be the most accurate and may be muddied by the perception of the other role. So for that reason, we have decided to only retain the role for which the candidate progressed the farthest into, as the best indication of qualification for that role, and hence proper ability to estimate compensation
 
 * **Analysis**: The analysis that I used throughout was a multiple linear regression model, ran across departments
 * **Analysis**: Most models had very good performance suggested by their R^2, especially after we applied a log transformation
